@@ -16,14 +16,21 @@
             <header class="navbar">
                 <nav>
                     <div class="name">
-                        <a href=""> Alexander Åstrand </a>
+                        <a href="index.html"> <img src="Style/images/ethereum.png" alt=""> Alexander Åstrand </a>
                     </div>
-                    <ul>
-                        <li><a href="index.html"> Home </a></li>
-                        <li><a href="Work.html"> Work </a></li>
-                        <li><a href="Blog.html"> Blog </a></li>
-                        <li><a href="About.html"> About </a></li>
-                    </ul>
+                    <button id="menu-button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="menu">
+                        <ul class="menu2">
+                            <li><a href="index.html"> Home </a></li>
+                            <li><a href="Work.html"> Work </a></li>
+                            <li><a href="Blog.html"> Blog </a></li>
+                            <li><a href="About.html"> About </a></li>
+                        </ul>
+                    </div>
                 </nav>
             </header>
             <main class="container"> 
@@ -43,5 +50,16 @@
             </footer>
 
         </div>
+        <script>
+            const menuBtn = document.querySelector('#menu-button');
+            menuBtn.addEventListener('click', () => {
+                menuBtn.classList.toggle('menu-open');
+            });
+    
+            document.getElementById("Accept-button").onclick = function () {
+                document.getElementById("cookies").style.display = "none";
+            }
+        </script>
+        
     </body>
 </html>

@@ -5,6 +5,26 @@
   width: 90%;
 }
 
+.navbar {
+  padding: 0;
+}
+
+.navbar nav {
+  padding: 30px 0 10px 0;
+  position: fixed;
+  background-color: purple;
+  z-index: 1;
+  padding: 40px 0 31px 0;
+  width: 100%;
+}
+
+.name a {
+position: absolute;
+left: 30px;
+top: 19px;
+}
+
+
 .band {
   grid-template-columns: 1fr 1fr;
 }
@@ -17,32 +37,33 @@
 }
 
 .menu {
-  position: relative;
-  right: 0;
+    position: relative;
+
 }
 
 .menu2 {
   font-size: 40px;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   justify-content: center;
   background-color: rgb(9, 4, 74);
-  opacity: 0.9;
-  width: 100%;
-  height: 100vh;
-  top: -40px;
-  left: -35px;
+  width: 50%;
+  top: 0;
+  right: 0;
   text-align: center;
   z-index: 1;
-  position: fixed;
-
+  padding: 40px 0 40px 0;
+  margin: 0;
+  border-bottom-left-radius: 45px;
+  
+  
 }
 
 .menu2 li {
-  display: inline;
   list-style: none;
-  font-size: 50px;
-  transition: all 0.3s ease 0s;
+  font-size: 25px;
+
+  
 }
 
 #menu-button.menu-open + .menu {
@@ -64,12 +85,13 @@
   cursor: pointer;
   z-index: 2;
   position: absolute;
-  right: 80px;
+  right: 39px;
 }
 
 #menu-button.menu-open {
-  position: fixed;
-  top: 40px;
+  position: absolute;
+  right: 90px;
+  top: 30px;
 }
 
 #menu-button span {
@@ -97,13 +119,15 @@
 
 #menu-button.menu-open span:nth-child(1n) {
   transform:rotate(45deg);
-  right: 10px;
 }
 
 #menu-button.menu-open span:nth-child(3n) {
   transform:rotate(-45deg);
 }
 
+.intro {
+  margin-top: 82px;
+}
 
 .intro article p {
   font-size: 15px;
@@ -114,4 +138,8 @@
   width: 90%;
 }
 
+
+.contact-container {
+  width: 80%;
+}
 
