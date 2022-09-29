@@ -19,8 +19,6 @@
 .menu {
   position: relative;
   right: 0;
-  transform: translateX(100%);
-  transition: all 0.5s ease-in-out;
 }
 
 .menu2 {
@@ -37,8 +35,6 @@
   text-align: center;
   z-index: 1;
   position: fixed;
-  transform: translateX(100%);
-  transition: all 0.5s ease-in-out;
 
 }
 
@@ -52,7 +48,6 @@
 #menu-button.menu-open + .menu {
   visibility: visible;
   display: contents;
-  transform: translateX(0%);
 
 }
 
