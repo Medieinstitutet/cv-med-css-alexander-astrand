@@ -89,7 +89,7 @@
 
   label {
     font-family: $spicy-font;
-    font-size: 2em;
+    font-size: 1em;
   }
 
 }
@@ -99,4 +99,20 @@
   font-size: 2rem;
   margin-top: 150px;
 
+}
+
+.contact-section {
+  h1 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
+
+input[type=text],
+select,
+textarea {
+  font-size: 1em;
 }

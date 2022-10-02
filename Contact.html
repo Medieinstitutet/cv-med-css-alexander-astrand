@@ -27,7 +27,7 @@
         <header class="navbar">
             <nav>
                 <div class="name">
-                    <a href="index.html"> <img src="Style/images/ethereum.png" alt="Ethereum-coin"> Alexander Åstrand </a>
+                    <img src="Style/images/ethereum.png" alt="Ethereum-coin"> <a href="index.html">  Alexander Åstrand </a>
                 </div>
                 <button id="menu-button">
                     <span></span>
@@ -46,16 +46,17 @@
         </header>
         <main class="container">
             <section class="contact-section">
-                <h1>Contact me:</h1>
+                <h1>Contact me!</h1>
+                <p>If you want to enquire about a job, have any questions or just want to say Hello you can send me a message here!</p>
                 <div class="contact-container">
 
-                    <form method="post" name="contact-form" action="mail.php">
+                    <form method="post" name="contact-form" action="mail.php" id="contact-form">
 
                         <label for="name">Full name</label>
-                        <input type="text" id="fname" name="name" placeholder="Your full name..">
+                        <input type="text" id="fname" name="name" placeholder="Your full name.." required>
 
                         <label for="email">Email</label>
-                        <input type="text" id="lname" name="email" placeholder="Your email..">
+                        <input type="text" id="lname" name="email" placeholder="Your email.." required>
 
                         <label for="subject">Subject</label>
                         <textarea id="subject" name="message" placeholder="Write something.."></textarea>
@@ -68,19 +69,18 @@
         </main>
         <footer class="footer">
             <div class="footer-box">
-                <div>
-                    Alexander Åstrand
-                </div>
+                <div class="contact-footer">
+                    <a href="Contact.html">Alexander Åstrand</a>
+                 </div>
                 <div class="favicons">
-                    <a href="https://github.com/alexander-astrand" target="_blank"><img
-                            src="Style/images/GitHub-Mark-Light-32px.png" alt=""></a>
-                    <a href="https://linkedin.com/in/alexander-åstrand-145662106" target="_blank"><img
-                            src="Style/images/317725_linkedin_social_icon.png" alt=""></a>
+                    <a href="https://github.com/alexander-astrand" target="_blank"><img src="Style/images/GitHub-Mark-Light-32px.png" alt=""></a>  
+                    <a href="https://linkedin.com/in/alexander-åstrand-145662106" target="_blank"><img src="Style/images/317725_linkedin_social_icon.png" alt=""></a> 
                 </div>
             </div>
-
+                
         </footer>
     </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
     <script src="script.js"></script>
 
 </body>

@@ -3,29 +3,33 @@ menuBtn.addEventListener('click', () => {
     menuBtn.classList.toggle('menu-open');
 });
 
-document.getElementById("Accept-button").onclick = function () {
-    document.getElementById("cookies").style.display = "none";
-}
 
-    function hasTouch() {
-        return 'ontouchstart' in document.documentElement
-            || navigator.maxTouchPoints > 0
-            || navigator.msMaxTouchPoints > 0;
-        }   
-
-    if (hasTouch()) { // remove all the :hover stylesheets
-    try { // prevent exception on browsers not supporting DOM styleSheets properly
-        for (var si in document.styleSheets) {
-        var styleSheet = document.styleSheets[si];
-        if (!styleSheet.rules) continue;
-
-        for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
-            if (!styleSheet.rules[ri].selectorText) continue;
-
-            if (styleSheet.rules[ri].selectorText.match(':hover')) {
-            styleSheet.deleteRule(ri);
-            }
-        }
-        }
-    } catch (ex) {}
+const constraints = {
+    name: {
+        presence: { allowEmpty: false }
+    },
+    email: {
+        presence: { allowEmpty: false },
+        email: true
+    },
+    message: {
+        presence: { allowEmpty: false }
     }
+};
+const form = document.getElementById('contact-form');
+form.addEventListener('submit', function (event) {
+  const formValues = {
+      name: form.elements.name.value,
+      email: form.elements.email.value,
+      message: form.elements.message.value
+  };
+  const errors = validate(formValues, constraints);
+  if (errors) {
+    event.preventDefault();
+    const errorMessage = Object
+        .values(errors)
+        .map(function (fieldValues) { return fieldValues.join(', ')})
+        .join("\n");
+    alert(errorMessage);
+  }
+}, false);
