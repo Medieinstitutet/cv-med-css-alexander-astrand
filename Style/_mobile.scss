@@ -1,4 +1,3 @@
-
 .container-about {
   width: 80%;
 }
@@ -16,18 +15,7 @@
   max-width: 1400px;
 }
 
-#menu-button {
-  background-color: transparent;
-  border: 0;
-  cursor: pointer;
-  z-index: 2;
-  position: absolute;
-  right:18px;
-}
 
-#menu-button.menu-open {
-  right: 68px;
-}
 
 .menu2 {
   width: 73%;
@@ -71,7 +59,7 @@
 
 .Dork {
   height: auto;
-  width: 90%;
+  width: 40%;
   float: left;
   margin-right: 0;
   border-radius: 45px;
@@ -88,6 +76,27 @@
 }
 
 .intro article p {
-  font-size: 15px;
+  font-size: pxToEM(15);
   margin: 0 0 30px 0;
+}
+
+
+.contact-container {
+  border-radius: 45px;
+  background-color: rgb(9, 4, 74);
+  padding: 40px;
+  width: 70%;
+
+  label {
+    font-family: $spicy-font;
+    font-size: 2em;
+  }
+
+}
+
+.Work-in-progress article h1 {
+
+  font-size: 2rem;
+  margin-top: 150px;
+
 }

@@ -1,52 +1,74 @@
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-size: 1.5em;
+}
 
-  input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-    font-size: 1.5em;
-  }
-  
-  input[type=submit] {
-    background-color: $secondary-text-color;
-    color: white;
-    padding: 12px 20px;
-    width: 130px;
-    font-size: 1.5em;
-    border: none;
-    border-radius: 45px;
-    cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color: $secondary-text-color;
-  }
-  
-  .contact-container {
-    border-radius: 45px;
-    background-color: rgb(9, 4, 74);
-    padding: 40px;
-    width: 50%;
-    label {
-      font-family: $spicy-font;
-      font-size: 2em;
-    }
+input[type=submit] {
+  background-color: $secondary-text-color;
+  color: white;
+  padding: 12px 20px;
+  width: 130px;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 45px;
+  cursor: pointer;
+  margin-top: 20px;
+}
 
+input[type=submit]:hover {
+  background-color: $secondary-text-color;
+}
+
+.contact-container {
+  border-radius: 45px;
+  background-color: rgb(9, 4, 74);
+  padding: 40px;
+  width: 50%;
+
+  label {
+    font-family: $spicy-font;
+    font-size: 2em;
   }
 
-  .contact-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-    margin-bottom: 100px;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 100px;
+
+  h1 {
+    font-family: $spicy-font;
+    font-size: 3em;
+  }
+}
+
+#subject {
+  height: 200px;
+}
+
+.container-thankyou {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  font-family: $spicy-font;
     h1 {
-      font-family: $spicy-font;
-      font-size: 3em;
+      font-size: 2em;
+        p {
+          font-size: 1.5em;
+        }
     }
-  }
+}
 
