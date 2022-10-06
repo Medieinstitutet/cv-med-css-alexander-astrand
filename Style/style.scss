@@ -42,7 +42,6 @@ body {
   max-width: 1400px;
 }
 
-
 .menu2 {
   display: flex;
   flex-direction: row;
@@ -198,32 +197,156 @@ body {
   position: relative;
   top: 0;
   transition: all .1s ease-in;
-  border-radius: 25px;
+  border-radius: 45px;
 }
 
-.card:hover {
+.thumb1:hover {
   top: -2px;
   box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-  background-color: #bf3261;
+  background-blend-mode: darken;
+    p {
+      visibility: visible;
+    }
 
 }
 
-.card article {
-  padding: 20px;
-  display: flex;
-  flex: 1;
-  justify-content: space-between;
-  flex-direction: column;
-
-}
-
-.card .thumb {
-  padding-bottom: 60%;
+.thumb1 {
+  background: rgba(0, 0, 0, 0.7) url(Images/decentraland-main.jpg);
+  height: 320px;
+  width: auto;
+  background-position: center;
   background-size: cover;
-  background-position: center center;
-  border-top-right-radius: 25px;
-  border-top-left-radius: 25px;
+  border-radius: 45px;
+
+    p {
+      visibility: hidden;
+      color: $primary-text-color;
+      padding: 30px;
+    }
+
 }
+
+.thumb2 { 
+  background: rgba(0, 0, 0, 0.7) url(Images/5bfd567a-e93f-4d78-9f37-38e47f4c647f-Top_Shot_art.jpg);
+  height: 320px;
+  width: auto;
+  background-position: center;
+  background-size: cover;
+  border-radius: 45px;
+
+    p {
+      visibility: hidden;
+      color: $primary-text-color;
+      padding: 30px;
+    }
+
+}
+
+.thumb2:hover {
+  top: -2px;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  background-blend-mode: darken;
+    p {
+      visibility: visible;
+    }
+}
+.thumb3 { 
+  background: rgba(0, 0, 0, 0.7) url(Images/pascal-bernardon-zt0HWquGXlQ-unsplash.jpg);
+  height: 320px;
+  width: auto;
+  background-position: center;
+  background-size: cover;
+  border-radius: 45px;
+
+    p {
+      visibility: hidden;
+      color: $primary-text-color;
+      padding: 30px;
+    }
+
+}
+
+.thumb3:hover {
+  top: -2px;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  background-blend-mode: darken;
+    p {
+      visibility: visible;
+    }
+}
+.thumb4 { 
+  background: rgba(0, 0, 0, 0.7) url(Images/kelly-sikkema-6AAsdlyvPD8-unsplash.jpg);
+  height: 320px;
+  width: auto;
+  background-position: center;
+  background-size: cover;
+  border-radius: 45px;
+
+    p {
+      visibility: hidden;
+      color: $primary-text-color;
+      padding: 30px;
+    }
+
+}
+
+.thumb4:hover {
+  top: -2px;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  background-blend-mode: darken;
+    p {
+      visibility: visible;
+    }
+}
+.thumb5 { 
+  background: rgba(0, 0, 0, 0.7) url(Images/guerrillabuzz-crypto-pr-UxDU0Gg5pqQ-unsplash.jpg);
+  height: 320px;
+  width: auto;
+  background-position: center;
+  background-size: cover;
+  border-radius: 45px;
+
+    p {
+      visibility: hidden;
+      color: $primary-text-color;
+      padding: 30px;
+    }
+
+}
+
+.thumb5:hover {
+  top: -2px;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  background-blend-mode: darken;
+    p {
+      visibility: visible;
+    }
+}
+.thumb6 { 
+  background: rgba(0, 0, 0, 0.7) url(Images/cryptocurrency.jpg);
+  height: 320px;
+  width: auto;
+  background-position: center;
+  background-size: cover;
+  border-radius: 45px;
+
+    p {
+      visibility: hidden;
+      color: $primary-text-color;
+      padding: 30px;
+    }
+
+}
+
+.thumb6:hover {
+  top: -2px;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  background-blend-mode: darken;
+    p {
+      visibility: visible;
+    }
+}
+
 
 .footer {
   border-top: 1px solid grey;
@@ -270,6 +393,8 @@ body {
 @import '_About';
 
 @import '_Work';
+
+@import '_Blog';
 
 
 

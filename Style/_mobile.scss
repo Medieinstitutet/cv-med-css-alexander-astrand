@@ -57,6 +57,8 @@
   margin: 0;
 } */
 
+//About
+
 .Dork {
   height: auto;
   width: 40%;
@@ -80,6 +82,7 @@
   margin: 0 0 30px 0;
 }
 
+//Contact
 
 .contact-container {
   border-radius: 45px;
@@ -94,12 +97,6 @@
 
 }
 
-.Work-in-progress article h1 {
-
-  font-size: 2rem;
-  margin-top: 150px;
-
-}
 
 .contact-section {
   h1 {
@@ -115,4 +112,13 @@ input[type=text],
 select,
 textarea {
   font-size: 1em;
+}
+
+//Work
+
+.Work-in-progress h1 {
+
+  font-size: 2rem;
+  margin-top: 150px;
+
 }
