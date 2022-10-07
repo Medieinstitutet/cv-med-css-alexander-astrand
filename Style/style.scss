@@ -1,3 +1,5 @@
+@import 'normalize';
+
 $primary-text-color: #2EE59D;
 $secondary-text-color: #bf3261;
 $spicy-font: 'Bungee Spice', cursive;
@@ -23,12 +25,10 @@ body {
   min-height: 100vh;
   flex-direction: column;
   position: relative;
-
 }
 
 .navbar {
   padding: 30px 0 10px 0;
-
   flex: none;
 }
 
@@ -116,23 +116,56 @@ body {
   flex-direction: column;
 }
 
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -30px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 0;
+  gap: 10px;
+}
+
+.waviy span {
+  flex-grow: 0;
+  position: relative;
+  display: inline-block;
+  color: $primary-text-color;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+  font-size: 3em;
+}
+
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+
 .title {
   box-sizing: content-box;
-
-}
-
-.title div {
   margin: 150px 0 150px 0;
-  width: 100%;
 }
 
-.title div h1 {
+.Alex-box {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 3rem;
+  color: $primary-text-color;
+  line-height: 1.4;
+  align-items: baseline; 
+}
+
+.title-box2 {
+  display: flex;
   font-size: 3rem;
   color: $primary-text-color;
   line-height: 1.4;
 }
 
-.title div h1 span {
+.title-box span {
   font-family: 'Bungee Spice', cursive;
   font-size: 70px;
 }
@@ -142,6 +175,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 150px;
 }
 
 .contact-me button {
@@ -385,6 +419,7 @@ body {
       list-style: none;
     }
 }
+
 
 
 
